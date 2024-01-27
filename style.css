@@ -1,0 +1,11 @@
+.header-text {
+    height: 500px;
+}
+.header-text > div {
+    position: relative;
+    top: 50%;
+}
+.header-text main {
+    position: relative;
+    top: 50%;
+}
