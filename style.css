@@ -1,11 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
 .header-text {
-    height: 500px;
+  height: 600px;
 }
-.header-text > div {
-    position: relative;
-    top: 50%;
+
+li a:hover {
+  opacity: 0.5;
 }
-.header-text main {
-    position: relative;
-    top: 50%;
+
+div a + p {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    color: var(--bs-blue);
+  }
+}
+.container-fluid > div > div {
+  & img {
+    transition: all 0.5s ease;
+  }
+  & img:hover {
+    opacity: 0.8;
+  }
 }
