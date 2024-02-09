@@ -36,3 +36,31 @@ div a + p {
     opacity: 0.8;
   }
 }
+
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: inherit;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+  font-weight: bold;
+}
+
+td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+h1 {
+  text-align: center;
+}
