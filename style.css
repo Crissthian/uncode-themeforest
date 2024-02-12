@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
 
+:root {
+  font-size: 15px;
+}
 * {
   font-family: "Inter", sans-serif;
 }
+
 .header-text {
   height: 400px;
 }
+
 @media (min-width: 768px) {
   .header-text {
     height: 500px;
   }
 }
+
 @media (min-width: 992px) {
   .header-text {
     height: 600px;
@@ -24,14 +30,17 @@ li a:hover {
 div a + p {
   cursor: pointer;
   transition: all 0.3s ease;
+
   &:hover {
     color: var(--bs-blue);
   }
 }
+
 .container-fluid > div > div {
   & img {
     transition: all 0.5s ease;
   }
+
   & img:hover {
     opacity: 0.8;
   }
@@ -63,4 +72,62 @@ tbody tr:nth-child(even) {
 
 h1 {
   text-align: center;
+}
+
+.aver {
+  display: block;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  object-position: center;
+  width: 430px;
+}
+
+.row.text-center.p-5 img {
+  object-position: center;
+}
+
+.checks {
+  justify-content: center;
+
+  & p {
+    width: max-content;
+    margin: 10px;
+    background-color: #ffffff2e;
+    padding: 5px;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  & div {
+    width: min-content;
+
+    & span::after {
+      content: " ";
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: space-evenly;
+  row-gap: 4rem;
+}
+
+.boton button {
+  background-color: #fff;
+  padding: 16px 38px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    background-color: #673ab7;
+    color: #fff;
+  }
+}
+.sections {
+  padding-top: 4rem;
 }
